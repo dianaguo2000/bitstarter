@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'))
 var buf=fs.readFileSync('index.html');
 
 app.get('/', function(request, response) {
-  response.send(buf.toString);
+  response.send(buf.toString());
 })
 
 app.listen(app.get('port'), function() {
